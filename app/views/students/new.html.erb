@@ -1,2 +1,4 @@
-<%= form_for(:student) do |s| %>
+<%= form_for(@student) do |s| %>
+  <%= s.first_name %>
+  <%= s.last_name %>
 <%= s.submit %>

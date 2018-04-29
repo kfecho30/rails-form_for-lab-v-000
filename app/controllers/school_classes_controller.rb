@@ -11,6 +11,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    @class = SchoolClass.create(params.require(:school_class).permit(:room_number, :title))
   end
 
   def edit
